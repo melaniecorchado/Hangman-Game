@@ -49,7 +49,7 @@ var totalGuesses = 10;
                 }
 
                 if(placeHolder == wordsList){
-                   alert("You WIN!");
+                   alert("You win! Your plane awaits!");
                    startGame();
                    letterUsed = [];
                     document.getElementById("button").onclick = guess;
@@ -57,7 +57,7 @@ var totalGuesses = 10;
                 }
 
                 if(totalGuesses == 0){
-                   alert("You LOSE!");
+                   alert("Sorry, the plane left :/");
                    startGame();
                    letterUsed = [];
                     document.getElementById("button").onclick = guess;
