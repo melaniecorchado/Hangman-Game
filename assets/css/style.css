@@ -1,8 +1,7 @@
 body {
 	margin:0 auto;
 	padding: 0;
-	background-image: url(../images/background.jpg);
-	
+	background-image: url(../images/background.jpg);	
 }
 
 header{
@@ -19,14 +18,18 @@ h1 {
 	font-size: 70px;
 	font-weight: bold;
 	font-family: 'Love Ya Like A Sister',cursive;
-
 }
 
 h3 {
 	font-size: 30px;
 	text-align: center;
 	font-family:'Love Ya Like A Sister',cursive;
+}
 
+p {
+	font-size: 15px;
+	text-align: center;
+	font-weight: bold;
 }
 
 .container {
@@ -37,7 +40,6 @@ h3 {
 	margin-right: 70px;
 	margin-top:40px;
 	border-style: dotted;
-
 }
 
 section {
@@ -45,6 +47,8 @@ section {
 	margin-left: 70px;
 	margin-top: 40px;
 	border-style:dotted;
+	padding: 25px;
+	background-color: #ffcc00;
 }
 
 #placeHolder {
@@ -56,7 +60,8 @@ section {
 #gamestatus {
 	text-align: center;
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 35px;
+	font-family:'Love Ya Like A Sister',cursive;
 }
 
 #guess{
@@ -65,10 +70,14 @@ section {
 
 #text{
 	text-align: center;
-
 }
 
 #totalGuesses {
+	text-align: center;
+	font-size: 25px;
+}
+
+#letter {
 	text-align: center;
 	font-size: 25px;
 }

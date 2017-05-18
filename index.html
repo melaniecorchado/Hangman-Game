@@ -11,7 +11,8 @@
 </head>
 
 	<header>
-		<h1>Hangman Around The World!</h1>
+		<h1>Hangman Around The World</h1>
+        <div id="gamestatus"></div>
 	</header>
 
 <body> 
@@ -24,26 +25,29 @@
             <br>
     		      <div id="gamestatus"></div>
             <br>
-    		          <div id="text"><input type="text" size="3" id="letterGuess" maxlength="2">
-                        </div>
+    		       <div id="text"><input type="text" size="3" id="letterGuess" maxlength="2"></div>
     		<br>
                      <div id="guess"><button id="button" onclick="guess()"></button>
                      </div>
-
+       
                         <h3>Guesses Left:</h3>
                         <div id="totalGuesses"></div>
 
                       <h3>Letters Used:</h3>
-                      <div></div>
+                      <div id="letter"></div>
+            <br>
 
 		</div>
-    </div>
 
     <section>
         <img src="assets/images/travel.gif">
 
-    </section>
-
+        <h3>Hint:</h3>
+        <p>Enjoy an eclair and sip on some of the world's best coffee</p>
+        <p>while you practice learning Swahili before you attend</p>
+        <p>the lantern festival and having shots of tequilla.</p>
+        <p>- P.S. Google Fu -</p>
+     </section>
 
 
 <script type="text/javascript" src="assets/javascript/game.js"></script>

@@ -1,5 +1,5 @@
-var dictionary = ['thailand', 'france', 'mexico', 'brazil', 'colombia'];
-var wordsList, input, placeHolder; 
+var dictionary = ['thailand', 'france', 'mexico', 'kenya', 'colombia'];
+var wordsList, input, placeHolder, letterUsed = []; 
 var totalGuesses = 10;
 
     function startGame(){
@@ -37,26 +37,30 @@ var totalGuesses = 10;
                 }
             }
 
-    if(!correctGuess){
-        totalGuesses--;
-        document.getElementById("totalGuesses").innerHTML= totalGuesses;
-        console.log(totalGuesses);
-    }
-
-    if(placeHolder == wordsList){
-       alert("You WIN!");
-       startGame();
-        document.getElementById("button").onclick = guess;
-    }
-
-    if(totalGuesses == 0){
-       alert("You LOSE!");
-        startGame();
-        document.getElementById("button").onclick = guess;
-    }
+            letterUsed.push(input);
+            document.getElementById("letter").innerHTML = letterUsed;
 
 
-        }
+
+                if(!correctGuess){
+                    totalGuesses--;
+                    document.getElementById("totalGuesses").innerHTML= totalGuesses;
+                    console.log(totalGuesses);
+                }
+
+                if(placeHolder == wordsList){
+                   alert("You WIN!");
+                   startGame();
+                    document.getElementById("button").onclick = guess;
+                }
+
+                if(totalGuesses == 0){
+                   alert("You LOSE!");
+                   startGame();
+                    document.getElementById("button").onclick = guess;
+                }
+
+         }
 
 
 
