@@ -4,7 +4,7 @@ var totalGuesses = 10;
 
     function startGame(){
         placeHolder = "";
-        totalGuesses = 10; 
+        totalGuesses = 10;  
         document.getElementById("totalGuesses").innerHTML= totalGuesses;
 
         wordsList = dictionary[Math.floor(Math.random() * dictionary.length)];
@@ -37,32 +37,34 @@ var totalGuesses = 10;
                 }
             }
 
-            letterUsed.push(input);
-            document.getElementById("letter").innerHTML = letterUsed;
-
-
+            //letterUsed.push(input);
+            //document.getElementById("letter").innerHTML = letterUsed;
 
                 if(!correctGuess){
                     totalGuesses--;
                     document.getElementById("totalGuesses").innerHTML= totalGuesses;
                     console.log(totalGuesses);
+                    letterUsed.push(input);
+                    document.getElementById("letter").innerHTML = letterUsed;
                 }
 
                 if(placeHolder == wordsList){
                    alert("You WIN!");
                    startGame();
+                   letterUsed = [];
                     document.getElementById("button").onclick = guess;
+                    document.getElementById("letter").innerHTML = letterUsed;
                 }
 
                 if(totalGuesses == 0){
                    alert("You LOSE!");
                    startGame();
+                   letterUsed = [];
                     document.getElementById("button").onclick = guess;
+                    document.getElementById("letter").innerHTML = letterUsed;
                 }
 
          }
-
-
 
 startGame();
 document.getElementById("button").onclick = guess;

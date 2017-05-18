@@ -7,7 +7,7 @@ body {
 header{
 	text-align: center;
 	background-color: #ccff99;
-	padding: 15px;
+	padding: 10px;
 	border-style: dotted;
 	margin-right: 40px;
 	margin-left: 40px;
@@ -37,14 +37,14 @@ p {
 	background-color: #ffcc00;
 	float: right;
 	width: 600px;
-	margin-right: 70px;
+	margin-right: 90px;
 	margin-top:40px;
 	border-style: dotted;
 }
 
 section {
 	float: left;
-	margin-left: 70px;
+	margin-left: 90px;
 	margin-top: 40px;
 	border-style:dotted;
 	padding: 25px;
