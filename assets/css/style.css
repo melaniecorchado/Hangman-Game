@@ -63,6 +63,11 @@ section {
 	text-align: center;
 }
 
+#text{
+	text-align: center;
+
+}
+
 #totalGuesses {
 	text-align: center;
 	font-size: 25px;

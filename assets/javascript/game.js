@@ -3,7 +3,10 @@ var wordsList, input, placeHolder;
 var totalGuesses = 10;
 
     function startGame(){
-        placeHolder = ""; 
+        placeHolder = "";
+        totalGuesses = 10; 
+        document.getElementById("totalGuesses").innerHTML= totalGuesses;
+
         wordsList = dictionary[Math.floor(Math.random() * dictionary.length)];
         console.log(wordsList);
 
@@ -11,6 +14,7 @@ var totalGuesses = 10;
 
         for(var i = 0; i < wordsList.length; i++){
             placeHolder += "_";
+
         }
 
         document.getElementById("placeHolder").innerHTML = placeHolder;
@@ -46,9 +50,9 @@ var totalGuesses = 10;
     }
 
     if(totalGuesses == 0){
-       alert("You LOSE!")
+       alert("You LOSE!");
         startGame();
-        document.getElementById("button").onclick = guess
+        document.getElementById("button").onclick = guess;
     }
 
 
