@@ -14,17 +14,17 @@
 		<h1>Hangman Around The World!</h1>
 	</header>
 
-	<p>
-		
-	</p>
-
 <body> 
 
     <div class="container">
+            <h3>Press any letter to get started!</h3>
+            <br>
 		    <div id="placeHolder">_ _ _ _ _ _</div>
+            <br>
     		    <div id="gamestatus"></div>
     		      <input type="text" size="1" id="letterGuess" maxlength="1">
-    		          <button id="button" onclick="guess()">Press to start</button>
+    		         <div id="guess"><button id="button" onclick="guess()"></button>
+                     </div>
 
                         <h3>Guesses Left:</h3>
                       <div id="totalGuesses"></div>

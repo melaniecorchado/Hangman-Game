@@ -1,37 +1,69 @@
 body {
 	margin:0 auto;
 	padding: 0;
+	background-image: url(../images/background.jpg);
 	
 }
 
 header{
 	text-align: center;
+	background-color: #ccff99;
+	padding: 15px;
+	border-style: dotted;
+	margin-right: 40px;
+	margin-left: 40px;
+	margin-top: 10px;
 }
 
 h1 {
-	font-size: 40px;
+	font-size: 70px;
 	font-weight: bold;
 	font-family: 'Love Ya Like A Sister',cursive;
+
 }
 
+h3 {
+	font-size: 30px;
+	text-align: center;
+	font-family:'Love Ya Like A Sister',cursive;
+
+}
 
 .container {
-	padding: 30px;
-	background-color: #adebad;
+	padding: 25px;
+	background-color: #ffcc00;
 	float: right;
 	width: 600px;
-	margin-right: 20px;
+	margin-right: 70px;
 	margin-top:40px;
-
+	border-style: dotted;
 
 }
 
 section {
 	float: left;
-	margin-left: 20px;
+	margin-left: 70px;
 	margin-top: 40px;
+	border-style:dotted;
 }
 
 #placeHolder {
+	text-align: center;
 	letter-spacing: 3px;
+	font-size: 25px;
+}
+
+#gamestatus {
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#guess{
+	text-align: center;
+}
+
+#totalGuesses {
+	text-align: center;
+	font-size: 25px;
 }
