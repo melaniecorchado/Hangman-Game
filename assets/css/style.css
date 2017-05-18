@@ -1,0 +1,37 @@
+body {
+	margin:0 auto;
+	padding: 0;
+	
+}
+
+header{
+	text-align: center;
+}
+
+h1 {
+	font-size: 40px;
+	font-weight: bold;
+	font-family: 'Love Ya Like A Sister',cursive;
+}
+
+
+.container {
+	padding: 30px;
+	background-color: #adebad;
+	float: right;
+	width: 600px;
+	margin-right: 20px;
+	margin-top:40px;
+
+
+}
+
+section {
+	float: left;
+	margin-left: 20px;
+	margin-top: 40px;
+}
+
+#placeHolder {
+	letter-spacing: 3px;
+}
