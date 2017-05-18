@@ -27,7 +27,7 @@ h3 {
 }
 
 p {
-	font-size: 15px;
+	font-size: 18px;
 	text-align: center;
 	font-weight: bold;
 }
@@ -54,7 +54,7 @@ section {
 #placeHolder {
 	text-align: center;
 	letter-spacing: 3px;
-	font-size: 25px;
+	font-size: 35px;
 }
 
 #gamestatus {
@@ -66,6 +66,7 @@ section {
 
 #guess{
 	text-align: center;
+	font-size: 15px;
 }
 
 #text{
